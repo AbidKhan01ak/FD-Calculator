@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FD Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="help-section">
+        <p class="help-text">What is FD?</p>
+        <div id="helpContent" class="help-content">
+            <p class="text">A Fixed Deposit (FD) is a financial instrument offered by banks that provides a higher interest rate than a savings account. The interest can be compounded annually, quarterly, or monthly.</p>
+        </div>
+    </div>
+    <div class="container">
+        <h1>FD Calculator</h1>
+        <p class="description">
+            Use this Fixed Deposit (FD) calculator to estimate your maturity amount based on the principle amount, interest rate, and tenure in years.
+        </p>
+
+        <div class="form-group">
+            <label for="principle">Principle Amount:</label>
+            <input type="number" id="principle" placeholder="Enter the principle amount in your currency">
+        </div>
+
+        <div class="form-group">
+            <label for="interestRate">Interest Rate (% per annum):</label>
+            <input type="number" id="interestRate" placeholder="Enter the annual interest rate">
+        </div>
+
+        <div class="form-group">
+            <label for="tenure">Tenure (in years):</label>
+            <input type="number" id="tenure" placeholder="Enter the tenure in years">
+        </div>
+
+        <div class="form-group">
+            <label for="compoundFrequency">Compounding Frequency:</label>
+            <select id="compoundFrequency">
+                <option value="1">Annually</option>
+                <option value="4">Quarterly</option>
+                <option value="12">Monthly</option>
+            </select>
+        </div>
+
+        <div class="button-container">
+            <button id="calculateBtn" class="calculate-btn">Calculate</button>
+            <button id="resetBtn" class="calculate-btn reset-btn">Reset</button>
+        </div>
+
+        <p id="result" class="result">Your result will include the principle amount, interest earned, and maturity amount here.</p>
+    </div>
+
+    
+
+    <script src="script.js" defer></script>
+</body>
+</html>
